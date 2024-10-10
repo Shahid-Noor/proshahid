@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This project is a Personal Portfolio website built using HTML, CSS, and some basic JavaScript. It is designed to showcase frontend development skills, including layout, design, and responsiveness, with a focus on writing clean, structured code."
+    />
+    <title>Hi I’m Shahid Noor a Sr. Android Developer.</title>
+    <link rel="icon" href="images/favicon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="inbio-logo">
+        <h1 class="header-title">Portfolio</h1>
+      </a>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      <button class="sidebar--open-btn" aria-label="Button To Open Sidebar">
+        <i class="fa-solid fa-bars sidebar--open-icon"></i>
+      </button>
+    </header>
+    <div class="sidebar--overlay">
+      <aside class="sidebar">
+        <div class="sidebar--head">
+          <h1 class="header-title">Portfolio</h1>
+          <button class="sidebar--close-btn">
+            <i class="fa-solid fa-xmark sidebar--close-icon"></i>
+          </button>
+        </div>
+        <p class="sidebar--desc">
+          I develop seamless user experiences, maximize performance, 
+          and use cutting-edge ad strategies to grow revenue from 
+          ideas into popular apps with millions of downloads.
+        </p>
+        <ul class="sidebar--links">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+        <div class="sidebar--footer social-media">
+          <p>find with me</p>
+          <ul class="social-media--list">
+            <li>
+              <a href="https://github.com/Shahid-Noor/proshahid/" class="social-link" aria-label="github">
+                <i class="fa-brands fa-github social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/14552563/pro-hussain/" class="social-link" aria-label="stackoverflow">
+                <i class="fa-brands fa-stack-overflow social-icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/prohussain/" class="social-link" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin-in social-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <section class="hero">
+      <div class="hero--text-box">
+        <span class="heading-sub">Welcome to my world</span>
+        <h1 class="heading-primary">
+          Hi, I’m <span>Shahid Noor</span><br /><span>a</span>
+          Sr. Android Developer.
+        </h1>
+        <p class="hero--text-desc">
+          I develop seamless user experiences, maximize performance, 
+          and use cutting-edge ad strategies to grow revenue from 
+          ideas into popular apps with millions of downloads.
+        </p>
+        <div class="hero--social">
+          <div class="social-media">
+            <p>find with me</p>
+            <ul class="social-media--list">
+              <li>
+                <a href="https://github.com/ProHussain/" class="social-link" aria-label="github">
+                  <i class="fa-brands fa-github social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/14552563/pro-hussain/" class="social-link" aria-label="stackoverflow">
+                  <i class="fa-brands fa-stack-overflow social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/prohussain/" class="social-link" aria-label="linkedin">
+                  <i class="fa-brands fa-linkedin-in social-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <p>best skill on</p>
+            <ul class="social-media--list">
+              <li>
+                <a href="https://developer.android.com/" class="social-link no-have-icon">
+                  <img
+                    src="images/social-icons/social-icon-1.webp"
+                    alt="Social Icon"
+                    class="social-img"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://kotlinlang.org/" class="social-link no-have-icon">
+                  <img
+                    src="images/social-icons/social-icon-2.webp"
+                    alt="Social Icon"
+                    class="social-img"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://admob.google.com/" class="social-link no-have-icon">
+                  <img
+                    src="images/social-icons/social-icon-3.webp"
+                    alt="Social Icon"
+                    class="social-img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hero--image-box">
+        <img
+          src="images/shahid.webp"
+          alt="Inbio Picture"
+          class="hero--inbio-image"
+        />
+      </div>
+    </section>
+    <div class="seperator">&nbsp;</div>
+    <section class="portfolio" id="portfolio">
+      <span class="heading-sub" style="text-align: center"
+        >Visit my portfolio and keep your feedback</span
+      >
+      <h2 class="heading-secondary" style="text-align: center">My Portfolio</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/photorecovery.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 20K+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=com.ant.photo.recovery" class="project-link"
+                >Photo, Video & Data Recovery</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/natureeditor.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 5M+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=com.mm.nature.photo.editor" class="project-link"
+                >Nature Photo Editor BG Changer</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/photocollagemaker.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 100K+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=com.las.collage.maker" class="project-link"
+                >Pic Collage Maker Photo Editor</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/bloodpressure.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 500K+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=com.fl.bloodpressure.monitor" class="project-link"
+                >BP Monitor: Blood Pressure App</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/languagetranslator.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 10M+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=com.fast.translatealllanguages.voice.translateapp.texttovoice.alllanguages.translator" class="project-link"
+                >Go Translate All Languages</a
+              >
+            </h3>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card--head">
+            <img
+              src="images/portfolio-imgs/weather.webp"
+              alt="Portfolio Project"
+            />
+          </div>
+          <div class="project-card--body">
+            <div class="project-info">
+              <strong class="project-type">Android App</strong>
+              <span class="project-stats"
+                ><i class="fa-regular fa-heart"></i> 100K+</span
+              >
+            </div>
+            <h3 class="heading-tertiary project-title">
+              <a href="https://play.google.com/store/apps/details?id=weatherforecast.radar.widget" class="project-link"
+                >Weather Forecast & Radar</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="seperator">&nbsp;</div>
+    <section class="resume" id="experience">
+      <div class="resume-container">
+        <span class="heading-sub">Experience</span>
+        <h2 class="heading-secondary">Professional Experience</h2>
+        <div class="timeline">
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="timeline-content">
+              <h3>Senior Android Developer</h3>
+              <span>OZI Technology (06/2024 - Present)</span>
+              <ul>
+                <li>Led development of Photo & Data Recovery App, integrating AI features to increase user engagement by 30%.</li>
+                <li>Implemented advanced data security and recovery mechanisms, resulting in a 40% reduction in data loss incidents.</li>
+                <li>Collaborated with UI/UX team to redesign app interface, improving user retention by 25%.</li>
+              </ul>
+            </div>
+            <div class="timeline-arrow"></div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="timeline-content">
+              <h3>Senior Android Developer</h3>
+              <span>Hazel Mobiles (09/2023 - 04/2024)</span>
+              <ul>
+                <li>Conducted R&D to enhance app performance, achieving 99.36% crash-free users and 99.67% ANR-free users.</li>
+                <li>Optimized application code, reducing startup time by 50% and improving overall app responsiveness.</li>
+                <li>Implemented automated testing procedures, decreasing bug reports by 35% and ensuring high code quality.</li>
+              </ul>
+            </div>
+            <div class="timeline-arrow"></div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="timeline-content">
+              <h3>Senior Android Developer</h3>
+              <span>Jeux Developers (09/2022 - 08/2023)</span>
+              <ul>
+                <li>Developed service apps with integrated APIs for booking, payments, and navigation, enhancing user experience.</li>
+                <li>Updated multiple applications to ensure compatibility with Android 14 OS, improving app stability and performance.</li>
+                <li>Designed and implemented push notifications, increasing user engagement and app usage by 20%.</li>
+              </ul>
+            </div>
+            <div class="timeline-arrow"></div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="timeline-content">
+              <h3>Android Developer</h3>
+              <span>Facile Solutions (07/2020 - 08/2022)</span>
+              <ul>
+                <li>Migrated high-traffic app (1M+ downloads) from Java to Kotlin, reducing app size by 20% and boosting performance.</li>
+                <li>Integrated new features like in-app purchases and subscriptions, increasing revenue by 35%.</li>
+                <li>Conducted code reviews and provided mentorship to junior developers, improving team productivity and code quality.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="seperator">&nbsp;</div>
+    <section class="resume" id="education">
+      <div class="resume-container">
+        <span class="heading-sub">Education & Courses</span>
+        <h2 class="heading-secondary">My Educational Background</h2>
+        <div class="feats cards">
+          <!-- Education Card -->
+          <a href="#" class="feat-box card">
+            <div class="feat-inner card-content">
+              <i class="fa-solid fa-graduation-cap feat-icon"></i>
+              <h3 class="heading-tertiary">BS Computer Science</h3>
+              <p class="feat-desc">
+                Intitue Of IT/CS Agriculture University
+              </p>
+              <p class="feat-desc">
+                Achieved 3.2/4.0 CGPA. Developed major Android projects, including an Pacer  and a puzzle game using OpenCV.
+              </p>
+            </div>
+          </a>
+    
+          <!-- Course 1 Card
+          <a href="#" class="feat-box card">
+            <div class="feat-inner card-content">
+              <i class="fa-solid fa-certificate feat-icon"></i>
+              <h3 class="heading-tertiary">Google Associate Android Developer Certification</h3>
+              <p class="feat-desc">
+                LinkedIn Learning
+              </p>
+              <p class="feat-desc">
+                Mastered advanced UI, MVVM, live data, and coroutines. Developed complex apps and improved performance.
+              </p>
+            </div>
+          </a>
+    
+           Course 2 Card -->
+          <!-- <a href="#" class="feat-box card">
+            <div class="feat-inner card-content">
+              <i class="fa-solid fa-laptop-code feat-icon"></i>
+              <h3 class="heading-tertiary">The Complete Android Oreo Developer Course</h3>
+              <p class="feat-desc">
+                Udemy
+              </p>
+              <p class="feat-desc">
+                Built 23 apps using Java, SQLite, Firebase, and REST APIs, covering both minor and major projects in Android development.
+              </p> \
+            </div>
+          </a> -->
+        </div>
+      </div>
+    </section>
+    
+    <div class="seperator">&nbsp;</div>
+    <section class="features" id="features">
+      <span class="heading-sub">Features</span>
+      <h2 class="heading-secondary">What I Do</h2>
+      <div class="feats">
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-mobile-alt feat-icon"></i>
+            <h3 class="heading-tertiary">Mobile App Development</h3>
+            <p class="feat-desc">
+              Build high-performance Android apps using modern frameworks and best practices.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-tools feat-icon"></i>
+            <h3 class="heading-tertiary">App Optimization & Maintenance</h3>
+            <p class="feat-desc">
+              Enhance app stability and performance, ensuring a smooth user experience.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-paint-brush feat-icon"></i>
+            <h3 class="heading-tertiary">UI/UX Design</h3>
+            <p class="feat-desc">
+              Create engaging and intuitive interfaces based on modern design principles.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-code feat-icon"></i>
+            <h3 class="heading-tertiary">API & Backend Development</h3>
+            <p class="feat-desc">
+              Integrate robust APIs and backend services for seamless app functionality.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-chart-line feat-icon"></i>
+            <h3 class="heading-tertiary">In-App Monetization</h3>
+            <p class="feat-desc">
+              Implement effective monetization strategies to maximize app revenue.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+        <a href="#" class="feat-box">
+          <div class="feat-inner">
+            <i class="fa-solid fa-project-diagram feat-icon"></i>
+            <h3 class="heading-tertiary">Project Management</h3>
+            <p class="feat-desc">
+              Lead teams in an Agile environment for efficient and timely project delivery.
+            </p>
+            <i class="fa-solid fa-arrow-right feat-arrow"></i>
+          </div>
+        </a>
+      </div>
+    </section>    
+    <div class="seperator">&nbsp;</div>
+    <section class="resume" id="skills">
+      <div class="resume-container">
+        <span class="heading-sub">Skills</span>
+        <h2 class="heading-secondary">Professional Skill Set</h2>
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Android Development</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 95%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 2 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Kotlin</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 3 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Java</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 85%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 4 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>UI/UX Design</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 80%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 5 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Firebase</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 75%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 6 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>REST APIs</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 80%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 7 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Agile Methodology</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 8 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Jetpack Compose</span>
+              <span>55%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 55%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 9 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Version Control (Git)</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 10 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Google Play Services</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 80%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 11 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Material Design</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 85%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 12 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>In-App Monetization</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 75%"></span>
+            </div>
+          </div>
+          
+          <!-- Skill 13 -->
+          <div class="skill-block">
+            <div class="skill-info">
+              <span>Unit Testing & Automation</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-progress">
+              <span style="width: 80%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <div class="seperator">&nbsp;</div>
+    <footer class="main-footer">
+      <p class="footer-quote">
+        "Words are cheap. Check my Code." - Shahid Noor
+      </p>
+    </footer>
+    <button class="to-up-btn">
+      <i class="fa-solid fa-arrow-up to-up-arrow"></i>
+    </button>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
